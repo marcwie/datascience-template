@@ -1,0 +1,8 @@
+data:
+  external: data/00_external
+  raw: data/01_raw
+  interim: data/02_interim
+  processed: data/03_processed
+
+compute:
+  folder: computations
