@@ -5,3 +5,4 @@ __pycache__
 output/
 data/
 poetry.lock
+outputs/
