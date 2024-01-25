@@ -1,4 +1,4 @@
-# Science template
+# Data science template
 
 This is a minimal template for my (data) science projects. Requires [poetry](https://python-poetry.org/).
 
@@ -10,29 +10,30 @@ The template has the following structure:
 
 ```
 .
-├── Makefile
-├── README.md
-├── computations
-├── config
-│   └── main.yaml
-├── data
-│   ├── 00_external
-│   ├── 01_raw
-│   ├── 02_interim
-│   └── 03_processed
-├── notebooks
-│   └── X.0X-template.ipynb
-├── output
-├── poetry.lock
-├── pyproject.toml
-├── scripts
-│   └── execute_notebooks.sh
-└── src
-    ├── __init__.py
-    └── utils
-        ├── __init__.py
-        ├── colors.py
-        └── styling.py
+├── Makefile                        # frequently used commands, see the file for details
+├── README.md                       #
+├── computations                    # computations and results go here
+├── config                          # config files for hydra
+│   └── main.yaml                   #     
+├── data                            # data folder
+│   ├── 00_external                 # data from external sources
+│   ├── 01_raw                      # raw and unaltered input data  
+│   ├── 02_interim                  # interim or partly processed data
+│   └── 03_processed                # final data for analysis
+├── notebooks                       # all jupyter notebooks
+│   └── X.0X-template.ipynb         # a basic template with a hydra setup
+├── output                          # figures and other output
+├── pyproject.toml                  # basic poetry setup
+├── scripts                         # bash scripts
+│   └── execute_notebooks.sh        # execute jupyter notebooks from the command line
+└── src                             # package source code
+    ├── __init__.py                 #   
+    ├── template.py                 # again, a minimal template for source files including hydra
+    └── utils                       # frequently used helpers 
+        ├── __init__.py             #    
+        ├── colors.py               # my custom colors for creating figures
+        ├── db_utils.py             # connect to a PostgreSQL database
+        └── styling.py              # custom styling for matplotlib figures
 ```
 
 This is a reduced version of what you might find when using the standard ```cookiecutter-data-science``` template with the addition of relying on [poetry](https://python-poetry.org/) for package management.
