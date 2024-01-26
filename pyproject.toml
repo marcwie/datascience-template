@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "science-template"
+name = "datascience-template"
 version = "0.1.0"
 description = ""
 authors = ["Marc Wiedermann"]
