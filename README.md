@@ -38,8 +38,8 @@ The template has the following structure:
 
 This is a reduced version of what you might find when using the standard ```cookiecutter-data-science``` template with the addition of relying on [poetry](https://python-poetry.org/) for package management.
 
-```data``` holds all necessary external, raw and derived data. All ```jupyter```-notebooks are supposed to in ```notebook```. Visual output is placed in ```output```.
+```data``` holds all necessary external, raw and derived data. All ```jupyter```-notebooks are supposed to be placed in ```notebooks```. Visual output is put in ```output```. If you use the template notebook a new timestampled subfolder is created under ```output``` whenever you restart the jupyter kernel. This is to keep track of older versions of figures. 
 
-```scripts``` holds all shell-scripts and other potential helpers. Modify ```execute_notebooks.sh``` in order to execute a chosen set of ```jupyter```-notebooks. This is pretty useful when you have a couple of ```jupyter```-notebooks that put figures into ```output``` and want to run all of them at once.
+```scripts``` holds all shell-scripts and other potential helpers. Modify ```execute_notebooks.sh``` in order to execute a chosen set of ```jupyter```-notebooks. This is pretty useful when you have a couple of ```jupyter```-notebooks that put figures into ```output``` and you want to run all of them at once.
 
 ```src``` is installed in the project's virtual environment. Use it to package code that you want to use in your notebooks. Includes a small collection of preset functionality that I typically need.
