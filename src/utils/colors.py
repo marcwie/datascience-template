@@ -19,9 +19,8 @@ class Flatuicolors():
         self.alizarin = '#e74c3c'
         self.pomegranate = '#c0392b'
         self.clouds = '#ecf0f1'
-        self.silver = '#bdc3c7' 
+        self.silver = '#bdc3c7'
         self.concrete = '#95a5a6'
         self.asbestos = '#7f8c8d'
 
 flatuicolors = Flatuicolors()
-
