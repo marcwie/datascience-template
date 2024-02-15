@@ -1,4 +1,5 @@
 import string
+from matplotlib import pyplot as plt
 
 
 def hide_and_move_axis(axis, hide=['right', 'top'], move=3):
@@ -61,3 +62,13 @@ def add_label(axarr, pos, size=20, offset=0.075):
 
         ax.text(x, y, label, horizontalalignment='center', verticalalignment='center',
                 transform = ax.transAxes, size=size)
+
+
+def get_standard_colors():
+    """
+    Get a list with the current standard colors.
+
+    Returns:
+        list (str): The hex codes of the currently active standard colors.
+    """
+    return plt.rcParams['axes.prop_cycle'].by_key()['color']
