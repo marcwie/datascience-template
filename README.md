@@ -2,9 +2,11 @@
 
 This is a minimal template for my (data) science projects. Requires [poetry](https://python-poetry.org/).
 
-# Usage
+# Installation
 
-After creating a new repository from this template simply run ```make install```.
+The package requires [poetry](https://python-poetry.org/). Make sure to have it installed and run `make install` after cloning this repository to install all dependencies.
+
+# Usage and Structure
 
 The template has the following structure:
 
